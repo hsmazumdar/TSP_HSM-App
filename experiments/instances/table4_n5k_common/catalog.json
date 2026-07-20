@@ -1,0 +1,57 @@
+[
+  {
+    "name": "grid200_keep5000_random_s20260718",
+    "mask": "random",
+    "grid_side": 200,
+    "parent_n": 40000,
+    "kept_n": 5000,
+    "seed": 20260718,
+    "spacing": 1,
+    "notes": "Lattice-subsampled Euclidean instance derived from a dense square grid. Not a continuous uniform cloud; points remain on the parent lattice.",
+    "params": {
+      "fast_sample": true
+    }
+  },
+  {
+    "name": "grid200_keep5000_circular_s20260719",
+    "mask": "circular",
+    "grid_side": 200,
+    "parent_n": 40000,
+    "kept_n": 5000,
+    "seed": 20260719,
+    "spacing": 1,
+    "notes": "Lattice-subsampled Euclidean instance derived from a dense square grid. Not a continuous uniform cloud; points remain on the parent lattice.",
+    "params": {
+      "radius_frac": 0.35,
+      "band_frac": 0.03
+    }
+  },
+  {
+    "name": "grid200_keep5000_spiral_s20260720",
+    "mask": "spiral",
+    "grid_side": 200,
+    "parent_n": 40000,
+    "kept_n": 5000,
+    "seed": 20260720,
+    "spacing": 1,
+    "notes": "Lattice-subsampled Euclidean instance derived from a dense square grid. Not a continuous uniform cloud; points remain on the parent lattice.",
+    "params": {
+      "turns": 6.0,
+      "corridor_frac": 0.025
+    }
+  },
+  {
+    "name": "grid200_keep5000_annular_s20260721",
+    "mask": "annular",
+    "grid_side": 200,
+    "parent_n": 40000,
+    "kept_n": 5000,
+    "seed": 20260721,
+    "spacing": 1,
+    "notes": "Lattice-subsampled Euclidean instance derived from a dense square grid. Not a continuous uniform cloud; points remain on the parent lattice.",
+    "params": {
+      "r_in_frac": 0.22,
+      "r_out_frac": 0.48
+    }
+  }
+]

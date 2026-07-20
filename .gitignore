@@ -172,3 +172,6 @@ TSP_CS-Core/
 **/TspMain.cs
 **/TspDistanceMatrix.cs
 
+
+# Paper Ver10: keep instance .tsp under experiments/
+!experiments/**/*.tsp

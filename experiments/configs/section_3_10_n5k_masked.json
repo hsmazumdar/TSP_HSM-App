@@ -1,0 +1,34 @@
+{
+  "Name": "section_3_10_n5k_masked",
+  "DefaultPattern": "Random",
+  "DefaultK": 1000,
+  "DefaultRuns": 3,
+  "DefaultMaxToursWithoutImprovement": 2,
+  "DefaultTimeoutSec": 1800,
+  "Jobs": [
+    {
+      "Id": "Random",
+      "N": 5000,
+      "XyFile": "../instances/table4_n5k_common/grid200_keep5000_random_s20260718.xy",
+      "SeedNote": "lattice-subsample random from G=200 keep 5000"
+    },
+    {
+      "Id": "Circular",
+      "N": 5000,
+      "XyFile": "../instances/table4_n5k_common/grid200_keep5000_circular_s20260719.xy",
+      "SeedNote": "lattice-subsample circular band from G=200"
+    },
+    {
+      "Id": "Spiral",
+      "N": 5000,
+      "XyFile": "../instances/table4_n5k_common/grid200_keep5000_spiral_s20260720.xy",
+      "SeedNote": "lattice-subsample spiral from G=200"
+    },
+    {
+      "Id": "Annular",
+      "N": 5000,
+      "XyFile": "../instances/table4_n5k_common/grid200_keep5000_annular_s20260721.xy",
+      "SeedNote": "lattice-subsample annular ring from G=200"
+    }
+  ]
+}

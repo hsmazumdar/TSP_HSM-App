@@ -1,0 +1,14 @@
+{
+  "name": "grid200_keep5000_spiral_s20260720",
+  "mask": "spiral",
+  "grid_side": 200,
+  "parent_n": 40000,
+  "kept_n": 5000,
+  "seed": 20260720,
+  "spacing": 1,
+  "notes": "Lattice-subsampled Euclidean instance derived from a dense square grid. Not a continuous uniform cloud; points remain on the parent lattice.",
+  "params": {
+    "turns": 6.0,
+    "corridor_frac": 0.025
+  }
+}

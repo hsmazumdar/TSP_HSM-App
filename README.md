@@ -1,5 +1,9 @@
 # TSP Solver Application - Public Repository
 
+**Dedicated paper reproducibility repository** for *Dynamic Virtual Distance Optimization for Large-Scale Euclidean Traveling Salesman Problems*.
+
+**Start here for reviewers:** [`VER10_NONGRID_REPRO.md`](VER10_NONGRID_REPRO.md)
+
 This is the public-facing application shell for the Traveling Salesman Problem (TSP) Solver. The core algorithmic implementation is provided as a binary DLL (`TSP_CS.Core.dll`) to protect intellectual property.
 
 ## Overview
@@ -21,16 +25,13 @@ This repository contains:
 
 ```
 TSP_HSM-App/
-├── Program.cs                    # Application entry point
-├── Tsp.cs                        # Main Windows Forms UI
-├── TspTune.cs                    # Settings/Parameters dialog
-├── MatrixChoiceDialog.cs         # Cache selection dialog
-├── *.Designer.cs                 # Windows Forms designer files
-├── *.resx                        # Resource files
-├── libs/                         # Pre-built DLL location
-│   └── TSP_CS.Core.dll          # Core algorithm library (binary)
-├── TSP_HSM-App.csproj           # Project file
-└── README.md                     # This file
+├── Program.cs / Tsp.cs / ...     # Application shell (UI)
+├── libs/TSP_CS.Core.dll          # Core solver (binary only)
+├── experiments/                  # Ver10 generators, configs, Table 4/5 instances
+├── TSP_AutoBench/                # Batch harness for reported runs
+├── VER10_NONGRID_REPRO.md        # Reviewer guide (Tables 4–5)
+├── TSP_HSM-App.csproj
+└── README.md
 ```
 
 ## Requirements

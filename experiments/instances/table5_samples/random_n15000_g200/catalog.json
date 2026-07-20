@@ -1,0 +1,13 @@
+[
+  {
+    "name": "grid200_keep15000_random_s20260718",
+    "mask": "random",
+    "grid_side": 200,
+    "parent_n": 40000,
+    "kept_n": 15000,
+    "seed": 20260718,
+    "spacing": 1,
+    "notes": "Lattice-subsampled Euclidean instance derived from a dense square grid. Not a continuous uniform cloud; points remain on the parent lattice.",
+    "params": {}
+  }
+]

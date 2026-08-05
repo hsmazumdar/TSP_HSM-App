@@ -4,7 +4,9 @@
 https://github.com/hsmazumdar/TSP_HSM-App
 
 This is the **dedicated public reproducibility repo** for the manuscript.  
-It includes the Windows Forms application shell, the compiled solver DLL, the Ver10 non-grid experiment package for **Tables 4–5**, and the Autobench **Table 2 / Figure 1** square-grid package (see [`TABLE2_REPRO.md`](TABLE2_REPRO.md)).
+It includes the Windows Forms application shell, the compiled solver DLL, the Ver10 non-grid experiment package for **Tables 4–5**, and the Autobench **Table 2 / Figure 1** square-grid package (see [`TABLE2_REPRO.md`](TABLE2_REPRO.md) and the claim map [`PAPER_CLAIMS.md`](PAPER_CLAIMS.md)).
+
+**Primary grid-scale claim:** Autobench through **N = 1,000,000** (Table 2 / Figure 1). Gaps vs unit LB ≈ N. N ≫ 10⁶ exploratory runs are outside the published Table 2 pack.
 
 It does **not** include proprietary `TSP_CS.Core` source code (DLL only).
 

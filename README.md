@@ -3,14 +3,17 @@
 **Dedicated paper reproducibility repository** for *Dynamic Virtual Distance Optimization for Large-Scale Euclidean Traveling Salesman Problems*.
 
 **Start here for reviewers:**
-- **Table 2 / Figure 1 (grid scale):** [`TABLE2_REPRO.md`](TABLE2_REPRO.md) — or double-click `MAKE_TABLE2_AND_FIGURE1.bat`
+- **Paper ↔ repo claim map:** [`PAPER_CLAIMS.md`](PAPER_CLAIMS.md) *(what Table 2 / Figure 1 do and do not claim)*
+- **Table 2 / Figure 1 (grid scale, N ≤ 1M):** [`TABLE2_REPRO.md`](TABLE2_REPRO.md) — or double-click `MAKE_TABLE2_AND_FIGURE1.bat`
 - **Tables 4–5 (non-grid):** [`VER10_NONGRID_REPRO.md`](VER10_NONGRID_REPRO.md)
+
+**Primary paper evidence in this repo:** Autobench square grids through **N = 1,000,000** (Table 2 + Figure 1). Gaps are vs the analytical unit lower bound ≈ N. Exploratory N ≫ 10⁶ runs are **not** in the published Table 2 pack.
 
 This is the public-facing application shell for the Traveling Salesman Problem (TSP) Solver. The core algorithmic implementation is provided as a binary DLL (`TSP_CS.Core.dll`) to protect intellectual property.
 
 ## Overview
 
-High-performance TSP solver supporting up to 1,000,000 cities with:
+High-performance TSP solver with Autobench-backed results through **1,000,000** cities:
 - k-nearest neighbors optimization
 - Adaptive virtual distance learning
 - Multiple city distribution patterns (Random, Square, Circle, Spiral)
@@ -32,6 +35,7 @@ TSP_HSM-App/
 ├── experiments/                  # Generators, configs, Tables 2/4/5 artefacts
 │   └── results/table2/           # Published Table-2.docx + Figure-1.png + summary.csv
 ├── TSP_AutoBench/                # Batch harness for reported runs
+├── PAPER_CLAIMS.md               # Paper ↔ repo claim map (reviewer)
 ├── TABLE2_REPRO.md               # Reviewer guide (Table 2 + Figure 1)
 ├── VER10_NONGRID_REPRO.md        # Reviewer guide (Tables 4–5)
 ├── MAKE_TABLE2_AND_FIGURE1.bat   # One-click rebuild of Table 2 / Figure 1

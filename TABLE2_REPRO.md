@@ -1,13 +1,14 @@
 # Table 2 + Figure 1 reproducibility (square-grid scale sweep)
 
-**Paper repository:** https://github.com/hsmazumdar/TSP_HSM-App
+**Paper repository:** https://github.com/hsmazumdar/TSP_HSM-App  
+**Claim map (paper ↔ this repo):** [`PAPER_CLAIMS.md`](PAPER_CLAIMS.md)
 
 This pack reproduces **Table 2** (performance vs N) and **Figure 1** (runtime / memory / gap panels)
 from the Autobench square-grid scale sweep through **N = 1,000,000**.
 
-Manuscript note: `_TSP_Paper.docx` (Next Journal Attempt) may still show an **older uncorrected**
-Table 2 / Figure 1. The files under `experiments/results/table2/` are the **new Autobench results**
-to use for correction / reviewer checks.
+**Manuscript alignment:** The paper’s **primary** Table 2 / Figure 1 evidence is this Autobench pack
+(N ≤ 1M; gaps vs unit lower bound ≈ N). Exploratory runs at N ≫ 10⁶ (e.g. N = 25M on a 32 GB PC)
+are discussed separately in the manuscript and are **not** part of Table 2 / Figure 1.
 
 ---
 
@@ -33,7 +34,15 @@ Requirements: Windows, [.NET 9 SDK](https://dotnet.microsoft.com/download) (or l
 | `experiments/results/table2/table2_merged_draft.md` | Markdown/TSV companion |
 | `experiments/results/table2/table2_scaling_analysis.json` | Power-law / quality stats |
 
-**Headline scaling (published summary):** runtime ≈ **O(N^1.08)** (N≥10k, R²≈0.989); memory ≈ **O(N^0.79)**; large-N gaps vs square unit LB mostly ≤0.31%, with several sizes at 0%.
+**Headline numbers (published summary):**
+
+| Item | Value |
+|------|--------|
+| Size range | N = 100 … **1,000,000** (15 sizes) |
+| Runtime fit (N ≥ 10k) | ≈ **O(N^1.08)**, R² ≈ 0.989 |
+| Memory fit | ≈ **O(N^0.79)**, R² ≈ 0.982 |
+| N = 1,000,000 | median time ≈ **1641 s**; Best/Avg/Worst gap **0.00%** |
+| Large-N gaps | mostly ≤ **0.31%** vs unit LB; several sizes at 0% |
 
 ---
 
@@ -44,7 +53,7 @@ Requirements: Windows, [.NET 9 SDK](https://dotnet.microsoft.com/download) (or l
 | `experiments/configs/table2_grid_smoke.json` | Reviewer smoke (N≤2k) |
 | `experiments/configs/table2_grid_scalability.json` | Full Table 2 sizes through 1M |
 | `experiments/configs/table2_grid_residual.json` | Residual large-N jobs (as used in Aug 2026 runs) |
-| `experiments/configs/table2_grid_mega.json` | Optional N>1M (not in published Table 2 yet) |
+| `experiments/configs/table2_grid_mega.json` | Optional N>1M (**not** in published Table 2) |
 | `experiments/scripts/run_autobench.ps1` | Build + run AutoBench |
 | `experiments/scripts/make_table2.py` | Aggregate Best/Avg/Worst gap + median time |
 | `experiments/scripts/generate_table2_figure1.py` | Write `Table-2.docx` + `Figure-1.png` |

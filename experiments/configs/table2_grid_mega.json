@@ -1,0 +1,20 @@
+{
+  "Name": "table2_grid_mega",
+  "DefaultPattern": "Square",
+  "DefaultK": 1000,
+  "DefaultRuns": 3,
+  "DefaultMaxToursWithoutImprovement": 3,
+  "DefaultTimeoutSec": 21600,
+  "Jobs": [
+    { "Id": "grid_n1210000",  "N": 1210000,  "Pattern": "Square", "TimeoutSec": 21600 },
+    { "Id": "grid_n1440000",  "N": 1440000,  "Pattern": "Square", "TimeoutSec": 21600 },
+    { "Id": "grid_n1500000",  "N": 1500000,  "Pattern": "Square", "TimeoutSec": 21600 },
+    { "Id": "grid_n2500000",  "N": 2500000,  "Pattern": "Square", "TimeoutSec": 21600 },
+    { "Id": "grid_n6000000",  "N": 6000000,  "Pattern": "Square", "TimeoutSec": 28800 },
+    { "Id": "grid_n8000000",  "N": 8000000,  "Pattern": "Square", "TimeoutSec": 28800 },
+    { "Id": "grid_n10000000", "N": 10000000, "Pattern": "Square", "TimeoutSec": 36000 },
+    { "Id": "grid_n15000000", "N": 15000000, "Pattern": "Square", "TimeoutSec": 43200 },
+    { "Id": "grid_n20000000", "N": 20000000, "Pattern": "Square", "TimeoutSec": 50400 },
+    { "Id": "grid_n25000000", "N": 25000000, "Pattern": "Square", "TimeoutSec": 57600 }
+  ]
+}

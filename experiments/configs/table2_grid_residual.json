@@ -1,0 +1,13 @@
+{
+  "Name": "table2_grid_scalability_residual",
+  "DefaultPattern": "Square",
+  "DefaultK": 1000,
+  "DefaultRuns": 3,
+  "DefaultMaxToursWithoutImprovement": 3,
+  "DefaultTimeoutSec": 14400,
+  "Jobs": [
+    { "Id": "grid_n750000",  "N": 750000,  "Pattern": "Square", "TimeoutSec": 14400, "Runs": 2 },
+    { "Id": "grid_n800000",  "N": 800000,  "Pattern": "Square", "TimeoutSec": 14400, "Runs": 3 },
+    { "Id": "grid_n1000000", "N": 1000000, "Pattern": "Square", "TimeoutSec": 14400, "Runs": 3 }
+  ]
+}

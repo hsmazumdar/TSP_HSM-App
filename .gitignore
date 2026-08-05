@@ -162,6 +162,16 @@ HelpText.rtf
 *.png
 cache/
 
+# Keep published Table 2 / Figure 1 artefacts for reviewers
+!experiments/results/table2/
+!experiments/results/table2/**
+!experiments/results/table2/*.png
+!experiments/results/table2/*.docx
+!experiments/results/table2/*.csv
+!experiments/results/table2/*.md
+!experiments/results/table2/*.tsv
+!experiments/results/table2/*.json
+
 # NOTE: TSP_CS.Core.dll is intentionally included in libs/ folder
 # Do NOT ignore it - it's required for the build
 !libs/TSP_CS.Core.dll

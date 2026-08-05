@@ -1,0 +1,15 @@
+{
+  "Name": "table2_grid_smoke",
+  "DefaultPattern": "Square",
+  "DefaultK": 1000,
+  "DefaultRuns": 2,
+  "DefaultMaxToursWithoutImprovement": 3,
+  "DefaultTimeoutSec": 600,
+  "Jobs": [
+    { "Id": "grid_n100",  "N": 100,  "Pattern": "Square", "TimeoutSec": 300 },
+    { "Id": "grid_n200",  "N": 200,  "Pattern": "Square", "TimeoutSec": 300 },
+    { "Id": "grid_n500",  "N": 500,  "Pattern": "Square", "TimeoutSec": 300 },
+    { "Id": "grid_n1000", "N": 1000, "Pattern": "Square", "TimeoutSec": 600 },
+    { "Id": "grid_n2000", "N": 2000, "Pattern": "Square", "TimeoutSec": 600 }
+  ]
+}

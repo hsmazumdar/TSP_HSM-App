@@ -1,13 +1,17 @@
-# TSP AutoBench orchestrator for JOCO revision experiments
+# TSP AutoBench orchestrator for paper reproducibility experiments
 # Usage:
 #   .\run_autobench.ps1 -Manifest smoke
 #   .\run_autobench.ps1 -Manifest nongrid
 #   .\run_autobench.ps1 -Manifest grid
+#   .\run_autobench.ps1 -Manifest table2
+#   .\run_autobench.ps1 -Manifest table2smoke
+#   .\run_autobench.ps1 -Manifest table2mega
 #   .\run_autobench.ps1 -Manifest ksens
+#   .\run_autobench.ps1 -ManifestPath ..\configs\table2_grid_scalability.json
 #   .\run_autobench.ps1 -N 1000 -Pattern Random -K 200
 
 param(
-    [ValidateSet("smoke", "nongrid", "grid", "ksens", "custom")]
+    [ValidateSet("smoke", "nongrid", "grid", "table2", "table2smoke", "table2mega", "ksens", "custom")]
     [string]$Manifest = "smoke",
 
     [string]$ManifestPath = "",
@@ -45,10 +49,13 @@ if (-not (Test-Path $exe)) {
 }
 
 $map = @{
-    smoke   = "joco_smoke_nongrid.json"
-    nongrid = "joco_nongrid_euclidean.json"
-    grid    = "joco_core_grid_scalability.json"
-    ksens   = "joco_k_sensitivity.json"
+    smoke       = "joco_smoke_nongrid.json"
+    nongrid     = "joco_nongrid_euclidean.json"
+    grid        = "joco_core_grid_scalability.json"
+    table2      = "table2_grid_scalability.json"
+    table2smoke = "table2_grid_smoke.json"
+    table2mega  = "table2_grid_mega.json"
+    ksens       = "joco_k_sensitivity.json"
 }
 
 $argsList = New-Object System.Collections.Generic.List[string]
@@ -82,6 +89,11 @@ $latest = Get-ChildItem $ResultsDir -Directory | Sort-Object LastWriteTime -Desc
 if ($latest) {
     Write-Host "`nAnalyzing $($latest.FullName) ..." -ForegroundColor Cyan
     python (Join-Path $AppRoot "experiments\scripts\analyze_autobench.py") $latest.FullName
+    if ($Manifest -match "^table2" -or ($ManifestPath -match "table2")) {
+        Write-Host "`nBuilding Table 2 draft ..." -ForegroundColor Cyan
+        $env:PYTHONIOENCODING = "utf-8"
+        python (Join-Path $AppRoot "experiments\scripts\make_table2.py") $latest.FullName
+    }
 }
 
 exit $code

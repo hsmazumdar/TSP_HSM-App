@@ -1,0 +1,25 @@
+{
+  "Name": "table2_grid_scalability",
+  "DefaultPattern": "Square",
+  "DefaultK": 1000,
+  "DefaultRuns": 5,
+  "DefaultMaxToursWithoutImprovement": 3,
+  "DefaultTimeoutSec": 7200,
+  "Jobs": [
+    { "Id": "grid_n100",      "N": 100,      "Pattern": "Square", "TimeoutSec": 300 },
+    { "Id": "grid_n200",      "N": 200,      "Pattern": "Square", "TimeoutSec": 300 },
+    { "Id": "grid_n500",      "N": 500,      "Pattern": "Square", "TimeoutSec": 300 },
+    { "Id": "grid_n1000",     "N": 1000,     "Pattern": "Square", "TimeoutSec": 600 },
+    { "Id": "grid_n2000",     "N": 2000,     "Pattern": "Square", "TimeoutSec": 600 },
+    { "Id": "grid_n5000",     "N": 5000,     "Pattern": "Square", "TimeoutSec": 900 },
+    { "Id": "grid_n10000",    "N": 10000,    "Pattern": "Square", "TimeoutSec": 1200 },
+    { "Id": "grid_n100000",   "N": 100000,   "Pattern": "Square", "TimeoutSec": 3600 },
+    { "Id": "grid_n200000",   "N": 200000,   "Pattern": "Square", "TimeoutSec": 7200, "Runs": 3 },
+    { "Id": "grid_n250000",   "N": 250000,   "Pattern": "Square", "TimeoutSec": 7200, "Runs": 3 },
+    { "Id": "grid_n400000",   "N": 400000,   "Pattern": "Square", "TimeoutSec": 10800, "Runs": 3 },
+    { "Id": "grid_n500000",   "N": 500000,   "Pattern": "Square", "TimeoutSec": 10800, "Runs": 3 },
+    { "Id": "grid_n750000",   "N": 750000,   "Pattern": "Square", "TimeoutSec": 14400, "Runs": 3 },
+    { "Id": "grid_n800000",   "N": 800000,   "Pattern": "Square", "TimeoutSec": 14400, "Runs": 3 },
+    { "Id": "grid_n1000000",  "N": 1000000,  "Pattern": "Square", "TimeoutSec": 14400, "Runs": 3 }
+  ]
+}

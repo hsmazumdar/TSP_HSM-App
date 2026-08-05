@@ -2,7 +2,9 @@
 
 **Dedicated paper reproducibility repository** for *Dynamic Virtual Distance Optimization for Large-Scale Euclidean Traveling Salesman Problems*.
 
-**Start here for reviewers:** [`VER10_NONGRID_REPRO.md`](VER10_NONGRID_REPRO.md)
+**Start here for reviewers:**
+- **Table 2 / Figure 1 (grid scale):** [`TABLE2_REPRO.md`](TABLE2_REPRO.md) — or double-click `MAKE_TABLE2_AND_FIGURE1.bat`
+- **Tables 4–5 (non-grid):** [`VER10_NONGRID_REPRO.md`](VER10_NONGRID_REPRO.md)
 
 This is the public-facing application shell for the Traveling Salesman Problem (TSP) Solver. The core algorithmic implementation is provided as a binary DLL (`TSP_CS.Core.dll`) to protect intellectual property.
 
@@ -27,9 +29,14 @@ This repository contains:
 TSP_HSM-App/
 ├── Program.cs / Tsp.cs / ...     # Application shell (UI)
 ├── libs/TSP_CS.Core.dll          # Core solver (binary only)
-├── experiments/                  # Ver10 generators, configs, Table 4/5 instances
+├── experiments/                  # Generators, configs, Tables 2/4/5 artefacts
+│   └── results/table2/           # Published Table-2.docx + Figure-1.png + summary.csv
 ├── TSP_AutoBench/                # Batch harness for reported runs
+├── TABLE2_REPRO.md               # Reviewer guide (Table 2 + Figure 1)
 ├── VER10_NONGRID_REPRO.md        # Reviewer guide (Tables 4–5)
+├── MAKE_TABLE2_AND_FIGURE1.bat   # One-click rebuild of Table 2 / Figure 1
+├── RUN_TABLE2_SMOKE.bat          # Short Autobench check
+├── RUN_TABLE2_FULL.bat           # Full N≤1M sweep (long)
 ├── TSP_HSM-App.csproj
 └── README.md
 ```

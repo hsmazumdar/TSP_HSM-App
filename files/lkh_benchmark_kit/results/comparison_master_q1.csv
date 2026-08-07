@@ -1,0 +1,13 @@
+n,method,source,elapsed_sec_mean,elapsed_sec_sd,peak_mb_mean,tour_native,tour_euc_equiv,gap_vs_paper_unit_lb_pct,gap_vs_euc_lb_pct,budget_5x_sec,n_runs,note
+10000,DVD-TSP,same_instance_json,13.5026,,555.01,10000,20000.0,0.0,0.0,67.5,1,I:\PaperSubmissions2026\TSP_Paper_17072026\experiments\results\lkh_compare_n10000\single_n10000_p2_k1000_20260806_090258\result.json
+10000,LKH-3,lkh_results_n10000_5x_fair.csv,3.0829,0.0276,201.26,20020.0,20020.0,0.1,0.1,68.0,3,EUC_2D; grid step=2 so LB=2N; 5xDVD wall budget
+10000,NN (KD-tree),baseline_nn,0.6276,0.0101,58.11,24039.3,24039.3,20.1967,20.1967,,3,EUC_2D; LB=2N
+100000,DVD-TSP,same_instance_json,183.5098,,5014.65,100194,200388.0,0.194,0.194,917.5,1,I:\PaperSubmissions2026\TSP_Paper_17072026\experiments\results\lkh_compare_n100000\single_n100000_p2_k1000_20260806_091909\result.json
+100000,LKH-3,lkh_results_n100000_5x_fair.csv,41.9419,1.12,68.21,200193.3,200193.3,0.0967,0.0967,918.0,3,EUC_2D; grid step=2 so LB=2N; 5xDVD wall budget
+100000,NN (KD-tree),baseline_nn,6.3884,0.0891,65.94,238482.3,238482.3,19.2412,19.2412,,3,EUC_2D; LB=2N
+500000,DVD-TSP,table2_mean,734.1168,64.5894,19250.61,500000.0,1000000.0,0.0,0.0,3670.6,3,table2_merged_summary.csv
+500000,LKH-3,lkh_results_n500000_5x_fair.csv,641.2612,16.6231,318.65,1001035.3,1001035.3,0.1035,0.1035,3671.0,3,EUC_2D; grid step=2 so LB=2N; 5xDVD wall budget
+500000,NN (KD-tree),baseline_nn,31.5444,0.1526,84.41,1187093.0,1187093.0,18.7093,18.7093,,3,EUC_2D; LB=2N
+1000000,DVD-TSP,table2_mean,1663.8114,131.3518,22373.18,1000000.0,2000000.0,0.0,0.0,8319.1,3,table2_merged_summary.csv
+1000000,LKH-3,lkh_results_n1000000_5x_fair.csv,1776.7842,48.7783,632.06,2002021.3,2002021.3,0.1011,0.1011,8320.0,3,EUC_2D; grid step=2 so LB=2N; 5xDVD wall budget
+1000000,NN (KD-tree),baseline_nn,63.6278,0.1329,105.54,2372925.0,2372925.0,18.6462,18.6462,,3,EUC_2D; LB=2N

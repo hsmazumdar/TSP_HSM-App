@@ -1,0 +1,11 @@
+PROBLEM_FILE = I:\PaperSubmissions2026\_COAP_TSP_31072026\Next_Journal_Attempt\files\lkh_benchmark_kit\tsp_instances_n10000\n10000.tsp
+OUTPUT_TOUR_FILE = I:\PaperSubmissions2026\_COAP_TSP_31072026\Next_Journal_Attempt\files\lkh_benchmark_kit\tsp_instances_n10000\n10000_run1.tour
+SEED = 32993
+RUNS = 1
+TIME_LIMIT = 68
+TOTAL_TIME_LIMIT = 68
+MAX_TRIALS = 50
+MAX_CANDIDATES = 5
+CANDIDATE_SET_TYPE = NEAREST-NEIGHBOR
+SUBGRADIENT = NO
+TRACE_LEVEL = 1

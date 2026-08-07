@@ -3,7 +3,9 @@
 **Paper:** *Dynamic Virtual Distance Optimization for Large-Scale Euclidean Traveling Salesman Problems*  
 **Repo:** https://github.com/hsmazumdar/TSP_HSM-App
 
-This document states which manuscript claims are backed by **this repository**, and which are out of scope.
+**Navigation:** [`EXPERIMENT_INDEX.md`](EXPERIMENT_INDEX.md) · [`REVIEWER_CHECK.bat`](REVIEWER_CHECK.bat) · [`GITHUB_REPRODUCIBILITY_AUDIT.md`](GITHUB_REPRODUCIBILITY_AUDIT.md)
+
+This document states which manuscript claims are backed by **this repository**, and which remain Level-A manuscript extracts or Level-C rerun stubs.
 
 ---
 
@@ -20,7 +22,20 @@ This document states which manuscript claims are backed by **this repository**, 
 | Rebuild | One-click regenerate Table 2 + Figure 1 from CSV | [`MAKE_TABLE2_AND_FIGURE1.bat`](MAKE_TABLE2_AND_FIGURE1.bat) |
 | Full re-run | Optional Autobench N ≤ 1M | [`RUN_TABLE2_FULL.bat`](RUN_TABLE2_FULL.bat) + [`TABLE2_REPRO.md`](TABLE2_REPRO.md) |
 
-**Start here:** [`TABLE2_REPRO.md`](TABLE2_REPRO.md)
+**Start here for Table 2:** [`TABLE2_REPRO.md`](TABLE2_REPRO.md)
+
+---
+
+## Table 1 / Table 3 / N=25M (packaged for claim protection)
+
+| Paper item | Claim family | What is in the repo | Gap field |
+|------------|--------------|---------------------|-----------|
+| **Table 1** | Short K-probe N=1M, K∈{8,16,32,64} | Manuscript aggregates + Autobench **rerun** config (historical minimal-stop **unrecovered**) | `gap_vs_unit_grid_lower_bound_percent` |
+| **Table 3** | TSPLIB quality, 10-run means | Manuscript extract + instance manifest; `.tsp` not bundled; per-run CSVs **unrecovered** | `gap_vs_tsplib_reference_percent` |
+| **§3.6 / Fig. 2** | Exploratory N=25M (~300 s, ~0.01% stability) | Compact manuscript JSON; instrumented tour-hash pack **unrecovered**; optional Autobench config | `run_to_run_stability_gap_percent` |
+| **Table 6** | Fair LKH-3 / NN ×5 DVD | [`files/lkh_benchmark_kit/`](files/lkh_benchmark_kit/) | separate fair protocol |
+
+Details: [`experiments/table1_k_sensitivity/README.md`](experiments/table1_k_sensitivity/README.md), [`experiments/table3_tsplib/README.md`](experiments/table3_tsplib/README.md), [`experiments/extreme_25m/README.md`](experiments/extreme_25m/README.md).
 
 ---
 
@@ -36,9 +51,9 @@ This document states which manuscript claims are backed by **this repository**, 
 
 | Topic | How the paper treats it | What reviewers should expect here |
 |-------|-------------------------|-----------------------------------|
-| **N > 1,000,000** (e.g. exploratory **N = 25,000,000** on a 32 GB workstation) | Manuscript **Section 3.6** feasibility note only — **not** Table 2 / Figure 1 | Config stub only: [`experiments/configs/table2_grid_mega.json`](experiments/configs/table2_grid_mega.json). No published mega summary CSV in this pack. |
-| Gaps vs Concorde / LKH-3 on **square grids** in Table 2 | **Not** used for Table 2 Autobench columns | Table 2 gaps = unit LB. TSPLIB / Concorde-style comparisons belong to other tables (see paper). |
-| GUI “TOUR” wall-clock on a personal PC | May differ from Autobench (cache, early-stop, timing scope) | Prefer Autobench CSV / bats for Table 2 / Figure 1 checks |
+| **N > 1,000,000** (e.g. exploratory **N = 25,000,000** on a 32 GB workstation) | Manuscript **Section 3.6** feasibility note only — **not** Table 2 / Figure 1 | [`experiments/extreme_25m/`](experiments/extreme_25m/) + mega ladder stub [`table2_grid_mega.json`](experiments/configs/table2_grid_mega.json) |
+| Gaps vs Concorde / LKH-3 on **square grids** in Table 2 | **Not** used for Table 2 Autobench columns | Table 2 gaps = unit LB. TSPLIB comparisons → Table 3 |
+| GUI “TOUR” wall-clock on a personal PC | May differ from Autobench | Prefer Autobench CSV / bats |
 
 ---
 
@@ -58,18 +73,9 @@ This is **not** an optimality gap vs Concorde/LKH unless a separate experiment s
 
 ## How to verify in minutes
 
-1. Open [`experiments/results/table2/Table-2.docx`](experiments/results/table2/Table-2.docx) and [`Figure-1.png`](experiments/results/table2/Figure-1.png).
-2. Or rebuild:
-
-```bat
-MAKE_TABLE2_AND_FIGURE1.bat
-```
-
-3. Optional smoke:
-
-```bat
-RUN_TABLE2_SMOKE.bat
-```
+1. Open [`EXPERIMENT_INDEX.md`](EXPERIMENT_INDEX.md) and run `REVIEWER_CHECK.bat` → option 9 (integrity).
+2. Rebuild Table 1 / Table 3 Level-B summaries (options 2 and 4) — these use manuscript extracts until raw runs exist.
+3. Table 2: `MAKE_TABLE2_AND_FIGURE1.bat` or open `experiments/results/table2/`.
 
 ---
 

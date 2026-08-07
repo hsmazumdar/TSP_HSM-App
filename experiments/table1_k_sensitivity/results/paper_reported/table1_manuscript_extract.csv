@@ -1,0 +1,5 @@
+K,best_gap_percent,mean_gap_percent,median_time_seconds,gap_type,N,pattern,source_document,note
+8,0.11,0.18,4.9,gap_vs_unit_grid_lower_bound_percent,1000000,Square,ACM_TSP_Paper_V4.docx Table 1,Manuscript aggregate only — not per-run Autobench rows
+16,0.04,0.09,6.8,gap_vs_unit_grid_lower_bound_percent,1000000,Square,ACM_TSP_Paper_V4.docx Table 1,Manuscript aggregate only — not per-run Autobench rows
+32,0.03,0.07,10.2,gap_vs_unit_grid_lower_bound_percent,1000000,Square,ACM_TSP_Paper_V4.docx Table 1,Manuscript aggregate only — not per-run Autobench rows
+64,0.03,0.06,18.5,gap_vs_unit_grid_lower_bound_percent,1000000,Square,ACM_TSP_Paper_V4.docx Table 1,Manuscript aggregate only — not per-run Autobench rows

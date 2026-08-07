@@ -1,0 +1,18 @@
+{
+  "Name": "joco_k_sensitivity",
+  "DefaultPattern": "Square",
+  "DefaultRuns": 5,
+  "DefaultMaxToursWithoutImprovement": 3,
+  "DefaultTimeoutSec": 3600,
+  "Jobs": [
+    { "Id": "k100_n10k",  "N": 10000, "Pattern": "Square", "K": 100 },
+    { "Id": "k500_n10k",  "N": 10000, "Pattern": "Square", "K": 500 },
+    { "Id": "k1000_n10k", "N": 10000, "Pattern": "Square", "K": 1000 },
+    { "Id": "k2000_n10k", "N": 10000, "Pattern": "Square", "K": 2000 },
+
+    { "Id": "k100_n100k",  "N": 100000, "Pattern": "Square", "K": 100,  "TimeoutSec": 7200 },
+    { "Id": "k500_n100k",  "N": 100000, "Pattern": "Square", "K": 500,  "TimeoutSec": 7200 },
+    { "Id": "k1000_n100k", "N": 100000, "Pattern": "Square", "K": 1000, "TimeoutSec": 7200 },
+    { "Id": "k2000_n100k", "N": 100000, "Pattern": "Square", "K": 2000, "TimeoutSec": 7200 }
+  ]
+}

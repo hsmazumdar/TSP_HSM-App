@@ -3,11 +3,26 @@
 **Dedicated paper reproducibility repository** for *Dynamic Virtual Distance Optimization for Large-Scale Euclidean Traveling Salesman Problems*.
 
 **Start here for reviewers:**
-- **Paper ↔ repo claim map:** [`PAPER_CLAIMS.md`](PAPER_CLAIMS.md) *(what Table 2 / Figure 1 do and do not claim)*
-- **Table 2 / Figure 1 (grid scale, N ≤ 1M):** [`TABLE2_REPRO.md`](TABLE2_REPRO.md) — or double-click `MAKE_TABLE2_AND_FIGURE1.bat`
+- **Experiment index:** [`EXPERIMENT_INDEX.md`](EXPERIMENT_INDEX.md)
+- **One menu:** [`REVIEWER_CHECK.bat`](REVIEWER_CHECK.bat)
+- **Paper ↔ repo claim map:** [`PAPER_CLAIMS.md`](PAPER_CLAIMS.md)
+- **Integrity:** [`VERIFY_REPOSITORY.bat`](VERIFY_REPOSITORY.bat)
+- **Audit status:** [`GITHUB_REPRODUCIBILITY_AUDIT.md`](GITHUB_REPRODUCIBILITY_AUDIT.md)
+- **Table 2 / Figure 1 (grid scale, N ≤ 1M):** [`TABLE2_REPRO.md`](TABLE2_REPRO.md) — or `MAKE_TABLE2_AND_FIGURE1.bat`
 - **Tables 4–5 (non-grid):** [`VER10_NONGRID_REPRO.md`](VER10_NONGRID_REPRO.md)
 
-**Primary paper evidence in this repo:** Autobench square grids through **N = 1,000,000** (Table 2 + Figure 1). Gaps are vs the analytical unit lower bound ≈ N. Exploratory N ≫ 10⁶ runs are **not** in the published Table 2 pack.
+## Reproducing Manuscript Results
+
+Three levels (do A/B before any long Level-C run):
+
+| Level | Meaning | Typical entry |
+|-------|---------|---------------|
+| **A** | Inspect supplied evidence | `EXPERIMENT_INDEX.md`, `paper_reported/` extracts, Table 2 CSVs |
+| **B** | Regenerate tables from result files | `REVIEWER_CHECK.bat` options 2/4; `MAKE_TABLE2_AND_FIGURE1.bat` |
+| **C** | Rerun the solver | Table 1 / Table 3 / 25M runners — **RESOURCE INTENSIVE** where marked |
+
+**Primary Autobench pack:** square grids through **N = 1,000,000** (Table 2 + Figure 1), gaps vs unit LB ≈ N.  
+**Also packaged (claim protection):** Table 1 K-probe, Table 3 TSPLIB manifest + manuscript means, exploratory N=25M compact extract, Table 6 LKH kit. Historical per-run logs for Table 1/3/25M were **not recovered** — do not treat manuscript extracts as Autobench raw rows.
 
 This is the public-facing application shell for the Traveling Salesman Problem (TSP) Solver. The core algorithmic implementation is provided as a binary DLL (`TSP_CS.Core.dll`) to protect intellectual property.
 
@@ -30,19 +45,17 @@ This repository contains:
 
 ```
 TSP_HSM-App/
-├── Program.cs / Tsp.cs / ...     # Application shell (UI)
-├── libs/TSP_CS.Core.dll          # Core solver (binary only)
-├── experiments/                  # Generators, configs, Tables 2/4/5 artefacts
-│   └── results/table2/           # Published Table-2.docx + Figure-1.png + summary.csv
-├── TSP_AutoBench/                # Batch harness for reported runs
-├── PAPER_CLAIMS.md               # Paper ↔ repo claim map (reviewer)
-├── TABLE2_REPRO.md               # Reviewer guide (Table 2 + Figure 1)
-├── VER10_NONGRID_REPRO.md        # Reviewer guide (Tables 4–5)
-├── MAKE_TABLE2_AND_FIGURE1.bat   # One-click rebuild of Table 2 / Figure 1
-├── RUN_TABLE2_SMOKE.bat          # Short Autobench check
-├── RUN_TABLE2_FULL.bat           # Full N≤1M sweep (long)
-├── TSP_HSM-App.csproj
-└── README.md
+├── EXPERIMENT_INDEX.md / PAPER_CLAIMS.md / REVIEWER_CHECK.bat
+├── libs/TSP_CS.Core.dll
+├── experiments/
+│   ├── table1_k_sensitivity/     # Table 1 K-probe
+│   ├── table3_tsplib/            # Table 3 TSPLIB
+│   ├── extreme_25m/              # §3.6 exploratory N=25M
+│   ├── configs/ + results/table2/
+│   └── scripts/run_autobench.ps1
+├── files/lkh_benchmark_kit/      # Table 6 fair LKH/NN
+├── TSP_AutoBench/
+└── MAKE_TABLE2_AND_FIGURE1.bat / RUN_TABLE1.bat / …
 ```
 
 ## Requirements

@@ -1,0 +1,23 @@
+{
+  "experiment": "DVD-TSP extreme-scale exploratory demonstration",
+  "N": 25000000,
+  "pattern": "Square",
+  "protocol": "lightweight_extreme_scale",
+  "evidence_class": "manuscript_extract_not_instrumented_run_pack",
+  "source_document": "ACM_TSP_Paper_V4.docx Section 3.6 / Figure 2 caption",
+  "manuscript_claims": {
+    "approx_elapsed_seconds": 300,
+    "run_to_run_stability_gap_percent": 0.01,
+    "figure2_residual_excess_length_units": 443,
+    "figure2_residual_excess_percent_approx": 0.0018,
+    "machine_note": "single 32 GB workstation (manuscript)"
+  },
+  "runs": [],
+  "notes": [
+    "This JSON records manuscript-stated exploratory numbers for Level-A inspection.",
+    "It is NOT a fabricated Autobench instrumented run with tour_sha256 / WorkingSet samples.",
+    "No compact instrumented 25M run pack with streamed tour hash was recovered in this packaging pass.",
+    "Do not label run_to_run_stability_gap_percent as an optimality gap."
+  ],
+  "gap_field_name": "run_to_run_stability_gap_percent"
+}

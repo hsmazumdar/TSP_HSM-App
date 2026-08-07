@@ -1,0 +1,4 @@
+LKH-3 vs DVD-TSP (same AutoBench Square instance), N=10000
+DVD-TSP (EXPORT_XY run): tour=10000, elapsed~13.5s, gap_vs_unit_LB=0%, peak_ws~555 MB (at completion)
+LKH-3 (EUC_2D TSPLIB from same .xy): see lkh_results.csv
+Note: LKH tour lengths ~2x AutoBench integer length because grid spacing in .xy is 2 (EUC neighbor=2).

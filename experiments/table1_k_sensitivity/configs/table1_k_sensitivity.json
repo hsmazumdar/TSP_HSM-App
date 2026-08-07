@@ -1,0 +1,19 @@
+{
+  "Name": "table1_k_sensitivity",
+  "experiment": "Table1_K_Sensitivity",
+  "purpose": "neighbourhood-size sensitivity only — not interchangeable with Table 2 Autobench wall-clock at N=1M",
+  "protocol": "short_probe_reproduction",
+  "protocol_note": "Historical minimal-stop parameters for the manuscript short K-probe were not recovered. This Autobench manifest is a reproducibility RERUN configuration (MaxToursWithoutImprovement=1). Do not claim it is the original historical stop.",
+  "DefaultPattern": "Square",
+  "DefaultRuns": 5,
+  "DefaultMaxToursWithoutImprovement": 1,
+  "DefaultTimeoutSec": 7200,
+  "N": 1000000,
+  "K_values": [8, 16, 32, 64],
+  "Jobs": [
+    { "Id": "table1_k8",  "N": 1000000, "Pattern": "Square", "K": 8,  "Runs": 5, "MaxToursWithoutImprovement": 1, "TimeoutSec": 7200 },
+    { "Id": "table1_k16", "N": 1000000, "Pattern": "Square", "K": 16, "Runs": 5, "MaxToursWithoutImprovement": 1, "TimeoutSec": 7200 },
+    { "Id": "table1_k32", "N": 1000000, "Pattern": "Square", "K": 32, "Runs": 5, "MaxToursWithoutImprovement": 1, "TimeoutSec": 7200 },
+    { "Id": "table1_k64", "N": 1000000, "Pattern": "Square", "K": 64, "Runs": 5, "MaxToursWithoutImprovement": 1, "TimeoutSec": 7200 }
+  ]
+}

@@ -1,0 +1,5 @@
+PROBLEM_FILE = J:\PaperSubmissions2026\_COAP_TSP_31072026\Next_Journal_Attempt\files\lkh_benchmark_kit\tsp_instances\n10000.tsp
+OUTPUT_TOUR_FILE = J:\PaperSubmissions2026\_COAP_TSP_31072026\Next_Journal_Attempt\files\lkh_benchmark_kit\tsp_instances\n10000_run3.tour
+TIME_LIMIT = 3600
+SEED = 262439
+RUNS = 1

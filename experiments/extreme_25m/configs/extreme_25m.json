@@ -1,0 +1,25 @@
+{
+  "experiment": "DVD-TSP extreme-scale exploratory demonstration",
+  "Name": "extreme_25m",
+  "protocol": "lightweight_extreme_scale",
+  "protocol_note": "Distinct from Table 2 Autobench. Timings must not be merged into Table 2 / Figure 1. Manuscript Section 3.6 / Figure 2.",
+  "N": 25000000,
+  "pattern": "Square",
+  "DefaultPattern": "Square",
+  "DefaultK": 1000,
+  "DefaultRuns": 3,
+  "DefaultMaxToursWithoutImprovement": 1,
+  "DefaultTimeoutSec": 57600,
+  "related_config": "experiments/configs/table2_grid_mega.json (contains grid_n25000000 job among other mega sizes)",
+  "Jobs": [
+    {
+      "Id": "extreme_n25000000",
+      "N": 25000000,
+      "Pattern": "Square",
+      "K": 1000,
+      "Runs": 3,
+      "MaxToursWithoutImprovement": 1,
+      "TimeoutSec": 57600
+    }
+  ]
+}

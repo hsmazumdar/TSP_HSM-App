@@ -1,0 +1,5 @@
+K,runs,best_gap_percent,mean_gap_percent,median_gap_percent,mean_time_seconds,median_time_seconds,sd_time_seconds,gap_type,evidence_class
+8,,0.11,0.18,,,4.9,,gap_vs_unit_grid_lower_bound_percent,manuscript_extract_not_raw_runs
+16,,0.04,0.09,,,6.8,,gap_vs_unit_grid_lower_bound_percent,manuscript_extract_not_raw_runs
+32,,0.03,0.07,,,10.2,,gap_vs_unit_grid_lower_bound_percent,manuscript_extract_not_raw_runs
+64,,0.03,0.06,,,18.5,,gap_vs_unit_grid_lower_bound_percent,manuscript_extract_not_raw_runs

@@ -1,0 +1,4 @@
+﻿instance,n_cities,run,elapsed_sec,peak_working_set_mb,tour_length,exit_code
+n10000,10000,1,249.7257,0,20002,0
+n10000,10000,2,307.2369,0,20000,0
+n10000,10000,3,324.8685,0,20002,0

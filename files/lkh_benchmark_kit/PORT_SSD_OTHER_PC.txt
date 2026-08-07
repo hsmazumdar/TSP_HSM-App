@@ -1,0 +1,62 @@
+# PORT SSD → other PC (HsmSsd2Tb) — LKH 5× DVD budget
+# Updated: 2026-08-06 ~13:49 IST
+
+## Before unplug (this PC)
+1. Confirm LKH is stopped:
+   Stop-Process -Name LKH,TSP_AutoBench -Force -ErrorAction SilentlyContinue
+2. Eject SSD safely.
+
+## Open on other PC (drive letter may change)
+Root of interest:
+  <SSD>:\PaperSubmissions2026\_COAP_TSP_31072026\Next_Journal_Attempt\files\lkh_benchmark_kit
+
+Needs: Windows PowerShell, .NET not required for LKH-only re-run (LKH.exe already built).
+
+## Modified test code (use THIS script)
+  03_run_lkh_benchmark.ps1
+
+Features:
+- **Fair budget:** LKH wall time = **5 × DVD ElapsedSec**
+- **Hard kill** at budget + 15 s (ascent cannot run for hours)
+- **Progress every 30 s** → console + `*.progress.log`
+- **Crash recoverable:** re-run same command; skips runs already in CSV; recovers orphan `.tour` files
+- Checkpoint: `*.checkpoint.json` (last run / pid)
+
+## Resume N=100000 (already exported on this SSD)
+
+```powershell
+# Fix drive letter if not J:
+$ssd = "J:"   # e.g. "E:" on the other PC
+$kit = "$ssd\PaperSubmissions2026\_COAP_TSP_31072026\Next_Journal_Attempt\files\lkh_benchmark_kit"
+$dvdJson = "$ssd\PaperSubmissions2026\TSP_Paper_17072026\experiments\results\lkh_compare_n100000\single_n100000_p2_k1000_20260806_091909\result.json"
+
+cd $kit
+.\03_run_lkh_benchmark.ps1 `
+  -LkhExe "$kit\LKH.exe" `
+  -TspDir "$kit\tsp_instances_n100000" `
+  -DvdResultJson $dvdJson `
+  -TimeMultiplier 5 `
+  -ProgressSec 30 `
+  -Runs 3 `
+  -OutCsv "$kit\results\lkh_results_n100000_5x.csv"
+```
+
+Expected: DVD ≈ 183.5 s → LKH budget ≈ **918 s (~15 min)** per run × 3.
+
+Watch progress:
+```powershell
+Get-Content $kit\results\lkh_results_n100000_5x.progress.log -Wait -Tail 20
+```
+
+If PC crashes mid-run: run the **same** command again (no -FreshStart). Completed runs are skipped.
+
+## Optional: re-do N=10000 under 5× (~68 s/run)
+DVD elapsed from export ~13.5 s (or pass -DvdElapsedSec 13.5).
+
+## After LKH 5× band
+Then start mega Autobench:
+  <SSD>:\PaperSubmissions2026\TSP_Paper_17072026\experiments\scripts\run_autobench.ps1 -Manifest table2mega
+
+## Do NOT
+- Resume the old uncapped LKH (killed; no fair TIME_LIMIT)
+- Use -FreshStart unless you intend to wipe CSV and redo all runs

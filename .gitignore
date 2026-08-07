@@ -185,3 +185,14 @@ TSP_CS-Core/
 
 # Paper Ver10: keep instance .tsp under experiments/
 !experiments/**/*.tsp
+
+# LKH kit: omit bulky rebuildable artefacts from GitHub
+files/lkh_benchmark_kit/lkh_src/
+files/lkh_benchmark_kit/tsp_instances_n500000/
+files/lkh_benchmark_kit/tsp_instances_n1000000/
+files/lkh_benchmark_kit/results/_nn_tmp*/
+files/lkh_benchmark_kit/**/*.tsp
+!files/lkh_benchmark_kit/results/*.csv
+!files/lkh_benchmark_kit/results/*.md
+!files/lkh_benchmark_kit/results/*.txt
+!files/lkh_benchmark_kit/results/*.json

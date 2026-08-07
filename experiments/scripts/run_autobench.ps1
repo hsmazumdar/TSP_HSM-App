@@ -7,11 +7,12 @@
 #   .\run_autobench.ps1 -Manifest table2smoke
 #   .\run_autobench.ps1 -Manifest table2mega
 #   .\run_autobench.ps1 -Manifest ksens
+#   .\run_autobench.ps1 -Manifest table1
 #   .\run_autobench.ps1 -ManifestPath ..\configs\table2_grid_scalability.json
 #   .\run_autobench.ps1 -N 1000 -Pattern Random -K 200
 
 param(
-    [ValidateSet("smoke", "nongrid", "grid", "table2", "table2smoke", "table2mega", "ksens", "custom")]
+    [ValidateSet("smoke", "nongrid", "grid", "table2", "table2smoke", "table2mega", "ksens", "table1", "custom")]
     [string]$Manifest = "smoke",
 
     [string]$ManifestPath = "",
@@ -56,6 +57,8 @@ $map = @{
     table2smoke = "table2_grid_smoke.json"
     table2mega  = "table2_grid_mega.json"
     ksens       = "joco_k_sensitivity.json"
+    # Table 1 lives under experiments/table1_k_sensitivity/configs/ (resolved below)
+    table1      = "table1_k_sensitivity.json"
 }
 
 $argsList = New-Object System.Collections.Generic.List[string]
@@ -71,6 +74,9 @@ else {
     if (-not $ManifestPath) {
         if (-not $map.ContainsKey($Manifest)) { throw "Unknown manifest alias: $Manifest" }
         $ManifestPath = Join-Path $ConfigDir $map[$Manifest]
+        if ($Manifest -eq "table1") {
+            $ManifestPath = Join-Path $AppRoot "experiments\table1_k_sensitivity\configs\table1_k_sensitivity.json"
+        }
     }
     if (-not (Test-Path $ManifestPath)) { throw "Manifest not found: $ManifestPath" }
     $argsList.Add("--manifest"); $argsList.Add($ManifestPath)

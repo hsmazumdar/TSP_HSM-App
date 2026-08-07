@@ -1,0 +1,2 @@
+﻿edge_weight_type values in table3_instances.csv are expected TSPLIB95 types for the standard instance names.
+Always confirm EDGE_WEIGHT_TYPE from the downloaded .tsp header before claiming a Level-C match.

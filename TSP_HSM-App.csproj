@@ -18,6 +18,11 @@
 
   <ItemGroup>
     <Compile Remove="Properties\AssemblyInfo.cs" />
+    <!-- sub-projects with their own .csproj are not part of the GUI app -->
+    <Compile Remove="TSP_AutoBench\**" />
+    <Compile Remove="TspImprove\**" />
+    <EmbeddedResource Remove="TSP_AutoBench\**;TspImprove\**" />
+    <None Remove="TSP_AutoBench\**;TspImprove\**" />
   </ItemGroup>
   
   <ItemGroup>

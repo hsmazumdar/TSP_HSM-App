@@ -1,5 +1,10 @@
 # TSP Solver Application - Public Repository
 
+> **Version 2.0 (November 2026):** new core DLL with fixes and a local-search stage (2-opt + Or-opt + ILS),
+> random city order by default, and fast k-NN for large non-grid instances. See [`CHANGELOG.md`](CHANGELOG.md).
+> The August 2026 core is kept in `libs/legacy/` (tag `v1-aug2026`).
+
+
 **Dedicated paper reproducibility repository** for *Dynamic Virtual Distance Optimization for Large-Scale Euclidean Traveling Salesman Problems*.
 
 **Start here for reviewers:**

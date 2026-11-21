@@ -2,3 +2,6 @@
 10:12:38 N requested 10,00,00,000 (tour files deleted after checking), shape square, K 25, runs 1, maxTrials 3, runMinutes 120
 10:12:38 Machine: DESKTOP-2HSKBJF, 32 logical CPUs, 63.7 GB RAM, Microsoft Windows NT 10.0.26300.0
 10:13:30 DRAW done: 10,00,00,000 cities, K used 25, 51.4 s, working set 30.99 GB
+10:46:36   run 1: rout_seq_01.tsp valid=True length=100000000.00 gap=0.00000%
+10:46:40 RUN 1: trials 1, best 100000000.00 (gap vs LB 0.00000%), optimal=True, time to best 1931.9 s, stop: auto-stop (perfect or trial limit)
+10:46:42 DONE N=10,00,00,000: peak working set 31.89 GB, committed 32.65 GB, total 34.1 min

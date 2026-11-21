@@ -1,0 +1,136 @@
+﻿{
+    "experiment":  "HSM DVD-TSP extreme-scale run",
+    "timestamp":  "20261117_185411",
+    "N":  20250000,
+    "K":  25,
+    "pattern":  "Square",
+    "solver_source":  "D:\\_AllWorkHsm\\2026\\_January2026\\TSP_CS-NN-NK_used_for_cache (copied to Exp20M\\TSP_CS)",
+    "machine":  {
+                    "computer":  "I9WIN10",
+                    "cpu":  "Intel(R) Core(TM) i9-10900K CPU @ 3.70GHz",
+                    "cores":  10,
+                    "logical":  20,
+                    "ram_total_gb":  31.9,
+                    "os":  "Microsoft Windows 10 Education",
+                    "dotnet":  "9.0.321"
+                },
+    "app_session_wall_s":  2287.6,
+    "peak_working_set_gb":  26.55,
+    "peak_private_bytes_gb":  38.23,
+    "fits_in_32gb":  true,
+    "tours":  [
+                  {
+                      "file":  "rout_seq_01.tsp",
+                      "size_mb":  364.1,
+                      "n":  20250000,
+                      "length":  20252992,
+                      "solve_time_s":  35.55,
+                      "written":  "2026-11-17T19:03:31"
+                  },
+                  {
+                      "file":  "rout_seq_02.tsp",
+                      "size_mb":  366.1,
+                      "n":  20250000,
+                      "length":  20253248,
+                      "solve_time_s":  139.42,
+                      "written":  "2026-11-17T19:05:49"
+                  },
+                  {
+                      "file":  "rout_seq_03.tsp",
+                      "size_mb":  363.2,
+                      "n":  20250000,
+                      "length":  20250000,
+                      "solve_time_s":  76.63,
+                      "written":  "2026-11-17T19:07:03"
+                  },
+                  {
+                      "file":  "rout_seq_04.tsp",
+                      "size_mb":  366.1,
+                      "n":  20250000,
+                      "length":  20254292,
+                      "solve_time_s":  39.86,
+                      "written":  "2026-11-17T19:07:46"
+                  },
+                  {
+                      "file":  "rout_seq_05.tsp",
+                      "size_mb":  366.1,
+                      "n":  20250000,
+                      "length":  20251230,
+                      "solve_time_s":  135.24,
+                      "written":  "2026-11-17T19:10:01"
+                  },
+                  {
+                      "file":  "rout_seq_06.tsp",
+                      "size_mb":  366.1,
+                      "n":  20250000,
+                      "length":  20251726,
+                      "solve_time_s":  137,
+                      "written":  "2026-11-17T19:12:19"
+                  },
+                  {
+                      "file":  "rout_seq_07.tsp",
+                      "size_mb":  365.7,
+                      "n":  20250000,
+                      "length":  20250000,
+                      "solve_time_s":  169.17,
+                      "written":  "2026-11-17T19:15:07"
+                  },
+                  {
+                      "file":  "rout_seq_08.tsp",
+                      "size_mb":  366.1,
+                      "n":  20250000,
+                      "length":  20250000,
+                      "solve_time_s":  73.31,
+                      "written":  "2026-11-17T19:16:17"
+                  },
+                  {
+                      "file":  "rout_seq_09.tsp",
+                      "size_mb":  366.1,
+                      "n":  20250000,
+                      "length":  20250000,
+                      "solve_time_s":  70.28,
+                      "written":  "2026-11-17T19:17:27"
+                  },
+                  {
+                      "file":  "rout_seq_10.tsp",
+                      "size_mb":  366.1,
+                      "n":  20250000,
+                      "length":  20250000,
+                      "solve_time_s":  71.71,
+                      "written":  "2026-11-17T19:18:44"
+                  },
+                  {
+                      "file":  "rout_seq_11.tsp",
+                      "size_mb":  366.1,
+                      "n":  20250000,
+                      "length":  20252384,
+                      "solve_time_s":  43.74,
+                      "written":  "2026-11-17T19:19:23"
+                  },
+                  {
+                      "file":  "rout_seq_12.tsp",
+                      "size_mb":  366.1,
+                      "n":  20250000,
+                      "length":  20251026,
+                      "solve_time_s":  39.92,
+                      "written":  "2026-11-17T19:20:03"
+                  },
+                  {
+                      "file":  "rout_seq_13.tsp",
+                      "size_mb":  366.1,
+                      "n":  20250000,
+                      "length":  20253780,
+                      "solve_time_s":  129.6,
+                      "written":  "2026-11-17T19:22:15"
+                  },
+                  {
+                      "file":  "rout_seq_14.tsp",
+                      "size_mb":  366.1,
+                      "n":  20250000,
+                      "length":  20250000,
+                      "solve_time_s":  76.91,
+                      "written":  "2026-11-17T19:23:29"
+                  }
+              ],
+    "note":  "app_session_wall_s includes time the window was open; per-trial solve time is in each tour header."
+}

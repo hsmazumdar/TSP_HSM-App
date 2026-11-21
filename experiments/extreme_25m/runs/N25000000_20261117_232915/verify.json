@@ -1,0 +1,20 @@
+[
+  {
+    "file": "F:\\PaperSubmissions2026\\TSP\\Exp20M\\cache2\\N25000000\\rout_seq_01.tsp",
+    "N_header": 25000000,
+    "cities_listed": 25000000,
+    "duplicates": 0,
+    "missing": 0,
+    "bad_lines": 0,
+    "valid_permutation": true,
+    "length_header": 25000000.0,
+    "length_recomputed_closed": 25000000.0,
+    "length_recomputed_open": 24999999.0,
+    "header_matches_recomputed": true,
+    "unit_steps": 24999999,
+    "grid_optimum": 25000000.0,
+    "gap_vs_grid_optimum_pct": 0.0,
+    "solution_time_header_sec": 80.72,
+    "verify_seconds": 29.8
+  }
+]

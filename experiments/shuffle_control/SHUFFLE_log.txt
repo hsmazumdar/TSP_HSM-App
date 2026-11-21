@@ -1,0 +1,91 @@
+[21-11-2026  9:24:59.60] building TspBatch6 
+D:\PaperSubmissions2026\TSP\ExpBig\TSP_CS_G5\MatrixChoiceDialog.Designer.cs(5,49): warning CS8669: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. Auto-generated code requires an explicit '#nullable' directive in source. [D:\PaperSubmissions2026\TSP\ExpBig\headless\TspBatch6\TspBatch6.csproj]
+
+Build succeeded.
+
+D:\PaperSubmissions2026\TSP\ExpBig\TSP_CS_G5\MatrixChoiceDialog.Designer.cs(5,49): warning CS8669: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. Auto-generated code requires an explicit '#nullable' directive in source. [D:\PaperSubmissions2026\TSP\ExpBig\headless\TspBatch6\TspBatch6.csproj]
+    1 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.37
+[21-11-2026  9:25:02.25] N=10000 row order 
+09:25:02 city order: generator order (row-major for grids)
+09:25:02 N requested 10,000 (tour files deleted after checking), shape square, K 25, runs 3, maxTrials 5, runMinutes 20
+09:25:02 Machine: DESKTOP-2HSKBJF, 32 logical CPUs, 63.7 GB RAM, Microsoft Windows NT 10.0.26300.0
+09:25:02 DRAW done: 10,000 cities, K used 25, 0.1 s, working set 0.05 GB
+09:25:03   run 1: rout_seq_01.tsp valid=True length=10000.00 gap=0.00000%
+09:25:06 RUN 1: trials 1, best 10000.00 (gap vs LB 0.00000%), optimal=True, time to best 1.1 s, stop: auto-stop (perfect or trial limit)
+09:25:08   run 2: rout_seq_01.tsp valid=True length=10000.00 gap=0.00000%
+09:25:11 RUN 2: trials 1, best 10000.00 (gap vs LB 0.00000%), optimal=True, time to best 1.1 s, stop: auto-stop (perfect or trial limit)
+09:25:12   run 3: rout_seq_01.tsp valid=True length=10000.83 gap=0.00828%
+09:25:13   run 3: rout_seq_02.tsp valid=True length=10000.83 gap=0.00828%
+09:25:14   run 3: rout_seq_03.tsp valid=True length=10000.83 gap=0.00828%
+09:25:15   run 3: rout_seq_04.tsp valid=True length=10000.83 gap=0.00828%
+09:25:16   run 3: rout_seq_05.tsp valid=True length=10000.83 gap=0.00828%
+09:25:17   run 3: rout_seq_06.tsp valid=True length=10000.83 gap=0.00828%
+09:25:18   run 3: rout_seq_07.tsp valid=True length=10000.00 gap=0.00000%
+09:25:22 RUN 3: trials 7, best 10000.00 (gap vs LB 0.00000%), optimal=True, time to best 6.5 s, stop: auto-stop (perfect or trial limit)
+09:25:23 DONE N=10,000: peak working set 0.07 GB, committed 0.04 GB, total 0.4 min
+[21-11-2026  9:25:02.25] N=10000 shuffled 
+09:25:23 city order: SHUFFLED (seed 12345)
+09:25:23 N requested 10,000 (tour files deleted after checking), shape square, K 25, runs 3, maxTrials 5, runMinutes 20
+09:25:23 Machine: DESKTOP-2HSKBJF, 32 logical CPUs, 63.7 GB RAM, Microsoft Windows NT 10.0.26300.0
+09:25:23 DRAW done: 10,000 cities, K used 25, 0.0 s, working set 0.05 GB
+09:25:25   run 1: rout_seq_01.tsp valid=True length=10000.83 gap=0.00828%
+09:25:26   run 1: rout_seq_02.tsp valid=True length=10000.00 gap=0.00000%
+09:25:30 RUN 1: trials 2, best 10000.00 (gap vs LB 0.00000%), optimal=True, time to best 1.1 s, stop: auto-stop (perfect or trial limit)
+09:25:31   run 2: rout_seq_01.tsp valid=True length=10000.00 gap=0.00000%
+09:25:34 RUN 2: trials 1, best 10000.00 (gap vs LB 0.00000%), optimal=True, time to best 1.1 s, stop: auto-stop (perfect or trial limit)
+09:25:35   run 3: rout_seq_01.tsp valid=True length=10000.00 gap=0.00000%
+09:25:38 RUN 3: trials 1, best 10000.00 (gap vs LB 0.00000%), optimal=True, time to best 1.1 s, stop: auto-stop (perfect or trial limit)
+09:25:39 DONE N=10,000: peak working set 0.07 GB, committed 0.04 GB, total 0.3 min
+[21-11-2026  9:25:02.25] N=1000000 row order 
+09:25:39 city order: generator order (row-major for grids)
+09:25:39 N requested 10,00,000 (tour files deleted after checking), shape square, K 25, runs 3, maxTrials 5, runMinutes 20
+09:25:39 Machine: DESKTOP-2HSKBJF, 32 logical CPUs, 63.7 GB RAM, Microsoft Windows NT 10.0.26300.0
+09:25:40 DRAW done: 10,00,000 cities, K used 25, 0.5 s, working set 0.37 GB
+09:25:44   run 1: rout_seq_01.tsp valid=True length=1000000.83 gap=0.00008%
+09:25:45   run 1: rout_seq_02.tsp valid=True length=1000000.83 gap=0.00008%
+09:25:48   run 1: rout_seq_03.tsp valid=True length=1000000.00 gap=0.00000%
+09:25:52 RUN 1: trials 3, best 1000000.00 (gap vs LB 0.00000%), optimal=True, time to best 6.7 s, stop: auto-stop (perfect or trial limit)
+09:25:55   run 2: rout_seq_01.tsp valid=True length=1000000.83 gap=0.00008%
+09:25:58   run 2: rout_seq_02.tsp valid=True length=1000000.83 gap=0.00008%
+09:25:59   run 2: rout_seq_03.tsp valid=True length=1000000.83 gap=0.00008%
+09:26:01   run 2: rout_seq_04.tsp valid=True length=1000000.83 gap=0.00008%
+09:26:03   run 2: rout_seq_05.tsp valid=True length=1000000.00 gap=0.00000%
+09:26:07 RUN 2: trials 5, best 1000000.00 (gap vs LB 0.00000%), optimal=True, time to best 9.5 s, stop: auto-stop (perfect or trial limit)
+09:26:10   run 3: rout_seq_01.tsp valid=True length=1000000.00 gap=0.00000%
+09:26:14 RUN 3: trials 1, best 1000000.00 (gap vs LB 0.00000%), optimal=True, time to best 1.8 s, stop: auto-stop (perfect or trial limit)
+09:26:15 DONE N=10,00,000: peak working set 0.42 GB, committed 0.39 GB, total 0.6 min
+[21-11-2026  9:25:02.25] N=1000000 shuffled 
+09:26:15 city order: SHUFFLED (seed 12345)
+09:26:15 N requested 10,00,000 (tour files deleted after checking), shape square, K 25, runs 3, maxTrials 5, runMinutes 20
+09:26:15 Machine: DESKTOP-2HSKBJF, 32 logical CPUs, 63.7 GB RAM, Microsoft Windows NT 10.0.26300.0
+09:26:15 DRAW done: 10,00,000 cities, K used 25, 0.4 s, working set 0.37 GB
+09:26:20   run 1: rout_seq_01.tsp valid=True length=1000000.00 gap=0.00000%
+09:26:24 RUN 1: trials 1, best 1000000.00 (gap vs LB 0.00000%), optimal=True, time to best 3.2 s, stop: auto-stop (perfect or trial limit)
+09:26:28   run 2: rout_seq_01.tsp valid=True length=1000000.83 gap=0.00008%
+09:26:29   run 2: rout_seq_02.tsp valid=True length=1000000.83 gap=0.00008%
+09:26:32   run 2: rout_seq_03.tsp valid=True length=1000000.00 gap=0.00000%
+09:26:36 RUN 2: trials 3, best 1000000.00 (gap vs LB 0.00000%), optimal=True, time to best 7.1 s, stop: auto-stop (perfect or trial limit)
+09:26:41   run 3: rout_seq_01.tsp valid=True length=1000000.83 gap=0.00008%
+09:26:43   run 3: rout_seq_02.tsp valid=True length=1000000.83 gap=0.00008%
+09:26:44   run 3: rout_seq_03.tsp valid=True length=1000000.83 gap=0.00008%
+09:26:47   run 3: rout_seq_04.tsp valid=True length=1000000.83 gap=0.00008%
+09:26:48   run 3: rout_seq_05.tsp valid=True length=1000000.00 gap=0.00000%
+09:26:52 RUN 3: trials 5, best 1000000.00 (gap vs LB 0.00000%), optimal=True, time to best 10.6 s, stop: auto-stop (perfect or trial limit)
+09:26:53 DONE N=10,00,000: peak working set 0.42 GB, committed 0.40 GB, total 0.6 min
+[21-11-2026  9:26:53.69] N=25000000 shuffled 
+09:26:53 city order: SHUFFLED (seed 12345)
+09:26:53 N requested 2,50,00,000 (tour files deleted after checking), shape square, K 25, runs 3, maxTrials 5, runMinutes 40
+09:26:53 Machine: DESKTOP-2HSKBJF, 32 logical CPUs, 63.7 GB RAM, Microsoft Windows NT 10.0.26300.0
+09:27:03 DRAW done: 2,50,00,000 cities, K used 25, 10.1 s, working set 7.80 GB
+09:35:25   run 1: rout_seq_01.tsp valid=True length=25000000.00 gap=0.00000%
+09:35:29 RUN 1: trials 1, best 25000000.00 (gap vs LB 0.00000%), optimal=True, time to best 489.6 s, stop: auto-stop (perfect or trial limit)
+09:37:48   run 2: rout_seq_01.tsp valid=True length=25000000.00 gap=0.00000%
+09:37:52 RUN 2: trials 1, best 25000000.00 (gap vs LB 0.00000%), optimal=True, time to best 127.0 s, stop: auto-stop (perfect or trial limit)
+09:38:57   run 3: rout_seq_01.tsp valid=True length=25000000.83 gap=0.00000%
+09:43:25   run 3: rout_seq_02.tsp valid=True length=25000000.00 gap=0.00000%
+09:43:29 RUN 3: trials 2, best 25000000.00 (gap vs LB 0.00000%), optimal=True, time to best 320.7 s, stop: auto-stop (perfect or trial limit)
+09:43:30 DONE N=2,50,00,000: peak working set 8.11 GB, committed 8.26 GB, total 16.6 min
+[21-11-2026  9:43:30.69] SHUFFLE CONTROL DONE 

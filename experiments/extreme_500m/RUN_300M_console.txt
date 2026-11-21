@@ -1,0 +1,18 @@
+[19-11-2026  9:22:30.55] building TspBatch4 
+D:\PaperSubmissions2026\TSP\ExpBig\TSP_CS_G4\MatrixChoiceDialog.Designer.cs(5,49): warning CS8669: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. Auto-generated code requires an explicit '#nullable' directive in source. [D:\PaperSubmissions2026\TSP\ExpBig\headless\TspBatch4\TspBatch4.csproj]
+
+Build succeeded.
+
+D:\PaperSubmissions2026\TSP\ExpBig\TSP_CS_G4\MatrixChoiceDialog.Designer.cs(5,49): warning CS8669: The annotation for nullable reference types should only be used in code within a '#nullable' annotations context. Auto-generated code requires an explicit '#nullable' directive in source. [D:\PaperSubmissions2026\TSP\ExpBig\headless\TspBatch4\TspBatch4.csproj]
+    1 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.41
+[19-11-2026  9:22:33.29] starting 300M run 
+09:22:33 N requested 29,99,82,400, shape square, K 25, runs 1, maxTrials 3, runMinutes 150
+09:22:33 Machine: DESKTOP-2HSKBJF, 32 logical CPUs, 63.7 GB RAM, Microsoft Windows NT 10.0.26300.0
+09:23:26 DRAW done: 29,99,82,400 cities, K used 8, 52.2 s, working set 35.83 GB
+10:02:06   run 1: rout_seq_01.tsp valid=True length=299982400.00 gap=0.00000%
+10:02:10 RUN 1: trials 1, best 299982400.00 (gap vs LB 0.00000%), optimal=True, time to best 2137.3 s, stop: auto-stop (perfect or trial limit)
+10:02:11 DONE N=29,99,82,400: peak working set 38.64 GB, committed 40.20 GB, total 39.6 min
+[19-11-2026 10:02:12.93] exit code 0 

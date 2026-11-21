@@ -1,0 +1,4 @@
+12:04:38 N requested 8,99,84,196 (tour files deleted after checking), shape square, K 25, runs 2, maxTrials 5, runMinutes 18
+12:04:38 Machine: DESKTOP-2HSKBJF, 32 logical CPUs, 63.7 GB RAM, Microsoft Windows NT 10.0.26300.0
+12:05:47 DRAW done: 8,99,84,196 cities, K used 23, 68.4 s, working set 30.65 GB
+12:16:35   run 1: rout_seq_01.tsp valid=True length=89984196.00 gap=0.00000%

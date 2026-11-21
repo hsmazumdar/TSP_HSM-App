@@ -1,0 +1,4 @@
+# N=501264 square2=False missingPct=0 K=25 deadEndJump=True repair2opt=True started=2026-11-21 10:12:30
+time_s,trials,kg,kg_pct,restarts,dead_ends,dead_end_restarts,jumps,max_kg_at_restart,repair_moves,repair_gain,best_len,gap_vs_LB_pct,restart_by_decile
+0.0,0,10000,1.99,0,0,0,0,0,0,0.00,,,0 0 0 0 0 0 0 0 0 0 0
+1.0,1,501264,100.00,0,1,0,0,0,494,698.33,501264,0.0000,0 0 0 0 0 0 0 0 0 0 0

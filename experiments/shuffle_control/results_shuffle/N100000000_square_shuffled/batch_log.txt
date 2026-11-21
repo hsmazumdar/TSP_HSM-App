@@ -1,0 +1,4 @@
+10:12:38 city order: SHUFFLED (seed 12345)
+10:12:38 N requested 10,00,00,000 (tour files deleted after checking), shape square, K 25, runs 1, maxTrials 3, runMinutes 120
+10:12:38 Machine: DESKTOP-2HSKBJF, 32 logical CPUs, 63.7 GB RAM, Microsoft Windows NT 10.0.26300.0
+10:13:30 DRAW done: 10,00,00,000 cities, K used 25, 51.4 s, working set 30.99 GB

@@ -1,0 +1,14 @@
+10:12:13 city order: SHUFFLED (seed 12345)
+10:12:13 N requested 5,01,264 (tour files deleted after checking), shape square, K 25, runs 3, maxTrials 5, runMinutes 10
+10:12:13 Machine: DESKTOP-2HSKBJF, 32 logical CPUs, 63.7 GB RAM, Microsoft Windows NT 10.0.26300.0
+10:12:13 DRAW done: 5,01,264 cities, K used 25, 0.3 s, working set 0.22 GB
+10:12:17   run 1: rout_seq_01.tsp valid=True length=501264.00 gap=0.00000%
+10:12:21 RUN 1: trials 1, best 501264.00 (gap vs LB 0.00000%), optimal=True, time to best 2.1 s, stop: auto-stop (perfect or trial limit)
+10:12:23   run 2: rout_seq_01.tsp valid=True length=501264.83 gap=0.00017%
+10:12:24   run 2: rout_seq_02.tsp valid=True length=501264.83 gap=0.00017%
+10:12:25   run 2: rout_seq_03.tsp valid=True length=501264.83 gap=0.00017%
+10:12:26   run 2: rout_seq_04.tsp valid=True length=501264.00 gap=0.00000%
+10:12:30 RUN 2: trials 4, best 501264.00 (gap vs LB 0.00000%), optimal=True, time to best 4.3 s, stop: auto-stop (perfect or trial limit)
+10:12:33   run 3: rout_seq_01.tsp valid=True length=501264.00 gap=0.00000%
+10:12:37 RUN 3: trials 1, best 501264.00 (gap vs LB 0.00000%), optimal=True, time to best 2.0 s, stop: auto-stop (perfect or trial limit)
+10:12:38 DONE N=5,01,264: peak working set 0.25 GB, committed 0.22 GB, total 0.4 min

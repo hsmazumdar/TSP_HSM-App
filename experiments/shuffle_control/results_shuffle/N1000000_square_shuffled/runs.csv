@@ -1,0 +1,4 @@
+machine,N,shape,missing_pct,K,run,trials,best_length,gap_vs_LB_pct,optimal,time_to_best_s,run_wall_s,draw_s,valid_tours,tours_checked,peak_ws_gb_so_far,peak_private_gb_so_far,stop_reason,best_sha256
+DESKTOP-2HSKBJF,1000000,square,0,25,1,1,1000000.0000,0.000000,True,3.2,8.3,0.4,1,1,0.39,0.37,auto-stop (perfect or trial limit),a882d79fb396770a3e46197483d2cbc277ca8ff2d27a7e59b34c3f338b5c9c31
+DESKTOP-2HSKBJF,1000000,square,0,25,2,3,1000000.0000,0.000000,True,7.1,12.3,0.4,3,3,0.40,0.37,auto-stop (perfect or trial limit),faad3ea866c885c92bc24276caae6bce120038926d2f10d6af8c68991c7a09e9
+DESKTOP-2HSKBJF,1000000,square,0,25,3,5,1000000.0000,0.000000,True,10.6,15.7,0.4,5,5,0.42,0.40,auto-stop (perfect or trial limit),5616adf3071b246d4b4a742f328a8feac87f2ddb108296a6b1c75fc8bee6c491

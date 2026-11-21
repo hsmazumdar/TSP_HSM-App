@@ -1,0 +1,11 @@
+09:47:51 N requested 1,99,98,784, shape square, K 25, runs 3, maxTrials 5, runMinutes 20
+09:47:51 Machine: DESKTOP-2HSKBJF, 32 logical CPUs, 63.7 GB RAM, Microsoft Windows NT 10.0.26300.0
+09:48:06 DRAW done: 1,99,98,784 cities, K used 25, 14.9 s, working set 7.95 GB
+09:49:36   run 1: rout_seq_01.tsp valid=True length=19998784.00 gap=0.00000%
+09:49:40 RUN 1: trials 1, best 19998784.00 (gap vs LB 0.00000%), optimal=True, time to best 65.5 s, stop: auto-stop (perfect or trial limit)
+09:50:57   run 2: rout_seq_01.tsp valid=True length=19998784.00 gap=0.00000%
+09:51:01 RUN 2: trials 1, best 19998784.00 (gap vs LB 0.00000%), optimal=True, time to best 53.7 s, stop: auto-stop (perfect or trial limit)
+09:52:00   run 3: rout_seq_01.tsp valid=True length=19998784.83 gap=0.00000%
+09:53:27   run 3: rout_seq_02.tsp valid=True length=19998784.00 gap=0.00000%
+09:53:31 RUN 3: trials 2, best 19998784.00 (gap vs LB 0.00000%), optimal=True, time to best 122.4 s, stop: auto-stop (perfect or trial limit)
+09:53:32 DONE N=1,99,98,784: peak working set 8.09 GB, committed 8.24 GB, total 5.7 min

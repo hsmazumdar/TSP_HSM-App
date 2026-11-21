@@ -1,0 +1,2 @@
+machine,N,shape,missing_pct,K,run,trials,best_length,gap_vs_LB_pct,optimal,time_to_best_s,run_wall_s,draw_s,valid_tours,tours_checked,peak_ws_gb_so_far,peak_private_gb_so_far,stop_reason,best_sha256
+DESKTOP-2HSKBJF,199996164,square,0,10,1,2,199996164.0000,0.000000,True,2700.0,3524.2,151.7,2,2,44.43,49.60,time limit 45 min,ab85ff7c4462a0583d8e8ea2261d00948eb4cc3128712e8195ba43e4fa6232ff

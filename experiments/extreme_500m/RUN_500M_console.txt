@@ -1,0 +1,15 @@
+[19-11-2026 10:29:43.22] building TspBatch4 
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.69
+[19-11-2026 10:29:45.48] starting 500M run 
+10:29:45 N requested 49,99,69,600, shape square, K 25, runs 1, maxTrials 3, runMinutes 180
+10:29:45 Machine: DESKTOP-2HSKBJF, 32 logical CPUs, 63.7 GB RAM, Microsoft Windows NT 10.0.26300.0
+10:31:32 DRAW done: 49,99,69,600 cities, K used 5, 107.1 s, working set 42.91 GB
+12:24:27   run 1: rout_seq_01.tsp valid=True length=499969600.00 gap=0.00000%
+12:24:31 RUN 1: trials 1, best 499969600.00 (gap vs LB 0.00000%), optimal=True, time to best 6489.6 s, stop: auto-stop (perfect or trial limit)
+12:24:32 DONE N=49,99,69,600: peak working set 47.11 GB, committed 49.97 GB, total 114.8 min
+[19-11-2026 12:24:33.91] exit code 0 

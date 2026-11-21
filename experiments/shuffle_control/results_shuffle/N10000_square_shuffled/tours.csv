@@ -1,0 +1,5 @@
+run,file,valid,missing,duplicates,length,gap_vs_LB_pct,wall_s_at_save,sha256
+1,rout_seq_01.tsp,True,0,0,10000.8284,0.008284,1.1,dcd7368dfae852831c479ced6e3297a01725f8dd123fffc3c4635227c32eda81
+1,rout_seq_02.tsp,True,0,0,10000.0000,0.000000,2.1,02fd92670db9b64cc020bbebeca7d44c4bfc9519a94255b7fbe091ade0d08463
+2,rout_seq_01.tsp,True,0,0,10000.0000,0.000000,1.1,dc7235a9f5b2bcf21448a6f755f0223fe04ce770fb55471974ea920c36583803
+3,rout_seq_01.tsp,True,0,0,10000.0000,0.000000,1.1,2183d087a75073e20d70b7f7f8eccdd6cc70a5a17ed84e6cfaa4aa234f3ff16e

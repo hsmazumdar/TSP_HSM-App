@@ -1,0 +1,25 @@
+﻿{
+    "experiment":  "HSM DVD-TSP extreme-scale run",
+    "timestamp":  "20261117_210353",
+    "N":  20250000,
+    "K":  25,
+    "pattern":  "Square",
+    "solver_source":  "D:\\_AllWorkHsm\\2026\\_January2026\\TSP_CS-NN-NK_used_for_cache (copied to Exp20M\\TSP_CS)",
+    "machine":  {
+                    "computer":  "I9WIN10",
+                    "cpu":  "Intel(R) Core(TM) i9-10900K CPU @ 3.70GHz",
+                    "cores":  10,
+                    "logical":  20,
+                    "ram_total_gb":  31.9,
+                    "os":  "Microsoft Windows 10 Education",
+                    "dotnet":  "9.0.321"
+                },
+    "app_session_wall_s":  48.6,
+    "peak_working_set_gb":  0.05,
+    "peak_private_bytes_gb":  0.01,
+    "fits_in_32gb":  true,
+    "tours":  [
+
+              ],
+    "note":  "app_session_wall_s includes time the window was open; per-trial solve time is in each tour header."
+}

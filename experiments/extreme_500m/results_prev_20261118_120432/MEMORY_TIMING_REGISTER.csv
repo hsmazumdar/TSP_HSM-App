@@ -1,0 +1,3 @@
+﻿"N","side","shape","K","draw_s","draw_peak_ws_gb","solve_peak_ws_gb","peak_ws_gb","peak_committed_gb","bytes_per_city","runs","optimal_runs","tours","sec_per_tour","time_to_best_mean_s","time_to_best_min_s","time_to_best_max_s","total_wall_min","machine","ram_gb","finished"
+"100000000","10000","square","21","76.3","33.27","34.8","34.8","37.25","400","3","2","4","880.8","967","805","1200","62","DESKTOP-2HSKBJF","63.7","2026-11-18T12:03:33"
+"199996164","14142","square","10","151.7","41.44","44.43","44.43","49.6","266","1","1","2","1762.1","2700","2700","2700","62.6","DESKTOP-2HSKBJF","63.7","2026-11-18T11:01:29"

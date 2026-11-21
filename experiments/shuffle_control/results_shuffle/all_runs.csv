@@ -1,0 +1,25 @@
+machine,N,shape,missing_pct,K,run,trials,best_length,gap_vs_LB_pct,optimal,time_to_best_s,run_wall_s,draw_s,valid_tours,tours_checked,peak_ws_gb_so_far,peak_private_gb_so_far,stop_reason,best_sha256
+DESKTOP-2HSKBJF,10000,square,0,25,1,1,10000.0000,0.000000,True,1.1,4.2,0.1,1,1,0.07,0.04,auto-stop (perfect or trial limit),65740f314a6ab3aab3e745c8640bf386769bd1867cb7624cea930aa89c7a78e0
+DESKTOP-2HSKBJF,10000,square,0,25,2,1,10000.0000,0.000000,True,1.1,4.1,0.1,1,1,0.07,0.04,auto-stop (perfect or trial limit),d31169f9868d21dd0ab4cb197227903dbbb56da68b36954eaaeff4a9e871c2ca
+DESKTOP-2HSKBJF,10000,square,0,25,3,7,10000.0000,0.000000,True,6.5,11.6,0.1,7,7,0.07,0.04,auto-stop (perfect or trial limit),7f047b698922e88a47044eede32cf42e226bca7ba14804757020124bfef34a2a
+DESKTOP-2HSKBJF,10000,square,0,25,1,2,10000.0000,0.000000,True,1.1,6.2,0.0,2,2,0.07,0.04,auto-stop (perfect or trial limit),02fd92670db9b64cc020bbebeca7d44c4bfc9519a94255b7fbe091ade0d08463
+DESKTOP-2HSKBJF,10000,square,0,25,2,1,10000.0000,0.000000,True,1.1,4.2,0.0,1,1,0.07,0.04,auto-stop (perfect or trial limit),dc7235a9f5b2bcf21448a6f755f0223fe04ce770fb55471974ea920c36583803
+DESKTOP-2HSKBJF,10000,square,0,25,3,1,10000.0000,0.000000,True,1.1,4.1,0.0,1,1,0.07,0.04,auto-stop (perfect or trial limit),2183d087a75073e20d70b7f7f8eccdd6cc70a5a17ed84e6cfaa4aa234f3ff16e
+DESKTOP-2HSKBJF,1000000,square,0,25,1,3,1000000.0000,0.000000,True,6.7,11.9,0.5,3,3,0.40,0.37,auto-stop (perfect or trial limit),1c742c2ae19c08a35e438380a835fdd11ff45c123963088ab5c0235da4af8f36
+DESKTOP-2HSKBJF,1000000,square,0,25,2,5,1000000.0000,0.000000,True,9.5,14.7,0.5,5,5,0.41,0.39,auto-stop (perfect or trial limit),d2f9ead501f8f260143463cd8cacab4b31ff7f423c3bda4782f7cc10433b36e7
+DESKTOP-2HSKBJF,1000000,square,0,25,3,1,1000000.0000,0.000000,True,1.8,7.0,0.5,1,1,0.42,0.39,auto-stop (perfect or trial limit),b9b59c52d4398f730d93f5045dcb91287931edc82faef1b0376e57153c6ccda9
+DESKTOP-2HSKBJF,1000000,square,0,25,1,1,1000000.0000,0.000000,True,3.2,8.3,0.4,1,1,0.39,0.37,auto-stop (perfect or trial limit),a882d79fb396770a3e46197483d2cbc277ca8ff2d27a7e59b34c3f338b5c9c31
+DESKTOP-2HSKBJF,1000000,square,0,25,2,3,1000000.0000,0.000000,True,7.1,12.3,0.4,3,3,0.40,0.37,auto-stop (perfect or trial limit),faad3ea866c885c92bc24276caae6bce120038926d2f10d6af8c68991c7a09e9
+DESKTOP-2HSKBJF,1000000,square,0,25,3,5,1000000.0000,0.000000,True,10.6,15.7,0.4,5,5,0.42,0.40,auto-stop (perfect or trial limit),5616adf3071b246d4b4a742f328a8feac87f2ddb108296a6b1c75fc8bee6c491
+DESKTOP-2HSKBJF,25000000,square,0,25,1,1,25000000.0000,0.000000,True,489.6,502.7,10.1,1,1,8.04,8.19,auto-stop (perfect or trial limit),d2e49a33c200883d4146677f15de15f0561fab080179a661031774d16dcdb532
+DESKTOP-2HSKBJF,25000000,square,0,25,2,1,25000000.0000,0.000000,True,127.0,139.9,10.1,1,1,8.06,8.22,auto-stop (perfect or trial limit),2b225fe087a1e2e0c92c7228ebfb57fe2865caf740c5d533f9016f47faa29853
+DESKTOP-2HSKBJF,25000000,square,0,25,3,2,25000000.0000,0.000000,True,320.7,333.5,10.1,2,2,8.11,8.26,auto-stop (perfect or trial limit),9a9fe278d26d709a01a28a04770791ed97bdcefdffd3c6d3decb082448c5ecd7
+DESKTOP-2HSKBJF,100000,square,0,25,1,100,100000.8284,0.000828,False,9.1,114.9,0.1,100,100,0.15,0.12,auto-stop (perfect or trial limit),83ed2afd628c2e058f204b8b9dc874bf0b05d58c5894349b116162b38f22899e
+DESKTOP-2HSKBJF,100000,square,0,25,2,100,100000.8284,0.000828,False,9.0,114.4,0.1,100,100,0.16,0.12,auto-stop (perfect or trial limit),d87392a8c6f7db91791706c2f5d42263aaa9dff5dd1fbae341a753dd31f7ccc8
+DESKTOP-2HSKBJF,100000,square,0,25,3,100,100000.8284,0.000828,False,2.4,114.8,0.1,100,100,0.16,0.12,auto-stop (perfect or trial limit),6bfee0045994e85a9befff0625d0a044fecc6be65a81e6e58a817f41e8b916ff
+DESKTOP-2HSKBJF,99856,square,0,25,1,1,99856.0000,0.000000,True,1.3,4.3,0.1,1,1,0.12,0.09,auto-stop (perfect or trial limit),0aefd50b9177987b616e28231e60cca1c87f728121ddfca1fbc14b0af22eecee
+DESKTOP-2HSKBJF,99856,square,0,25,2,1,99856.0000,0.000000,True,1.2,4.3,0.1,1,1,0.12,0.09,auto-stop (perfect or trial limit),abf9605c4f7ef6cce1029e292841a91d38c8a1ff5d9128d8e1217dd650f644f3
+DESKTOP-2HSKBJF,99856,square,0,25,3,2,99856.0000,0.000000,True,1.2,6.3,0.1,2,2,0.15,0.12,auto-stop (perfect or trial limit),edd15e3f28a27de446a97a21d4001b9443dcb0b4f4ec2a03eafec8c16460ba95
+DESKTOP-2HSKBJF,501264,square,0,25,1,1,501264.0000,0.000000,True,2.1,7.2,0.3,1,1,0.23,0.20,auto-stop (perfect or trial limit),f66d5deedb64201a41ba9b450d4f412a0158da759dc4318590a870c085a20223
+DESKTOP-2HSKBJF,501264,square,0,25,2,4,501264.0000,0.000000,True,4.3,9.3,0.3,4,4,0.24,0.21,auto-stop (perfect or trial limit),cfc6c7af5966fa81f8343c3725c7a0673b992b962e39f8dccf0b161a0dd2a8db
+DESKTOP-2HSKBJF,501264,square,0,25,3,1,501264.0000,0.000000,True,2.0,7.1,0.3,1,1,0.25,0.22,auto-stop (perfect or trial limit),f2c484a4c1e9dacdaea474c93cc85d1154bfd03327bdab475bedd340a2bbed11

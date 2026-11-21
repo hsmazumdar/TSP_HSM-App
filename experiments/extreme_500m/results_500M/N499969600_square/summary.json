@@ -1,0 +1,21 @@
+{
+  "experiment": "HSM DVD-TSP headless batch (TSP_CS_G3 engine)",
+  "machine": "DESKTOP-2HSKBJF",
+  "logical_cpus": 32,
+  "ram_gb": 63.7,
+  "N_requested": 499969600,
+  "N_cities": 499969600,
+  "shape": "square",
+  "missing_pct": 0,
+  "even_grid_optimum_is_N": true,
+  "K_used": 5,
+  "draw_s": 107.1,
+  "draw_peak_ws_gb": 41.2,
+  "peak_working_set_gb": 47.11,
+  "peak_private_gb": 49.97,
+  "runs": 1,
+  "max_trials": 3,
+  "run_minutes_cap": 180,
+  "total_wall_s": 6886.6,
+  "finished": "2026-11-19T12:24:32"
+}

@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Headless batch runner; links the released core DLL (no core source needed). -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ServerGarbageCollection>false</ServerGarbageCollection>
+    <AssemblyName>TspBatch</AssemblyName>
+    <Version>2.1.0</Version>
+    <NoWarn>CS8600;CS8601;CS8602;CS8603;CS8604;CS8618;CS8625;CS0168;CS0219;CS0162;CS0414;CS0649;CS0169;CS1998;CS8619;CS8629;CA1416;WFO1000</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="TSP_CS.Core.G5">
+      <HintPath>..\..\libs\g5\TSP_CS.Core.G5.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

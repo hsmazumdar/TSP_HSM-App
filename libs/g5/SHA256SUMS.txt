@@ -1,0 +1,4 @@
+91d66d234a2911b4aaeb65722f5ec90795abd3dfbb9accaa0b461685c9c6b399  .\stage\libs\g5\TSP_CS.Core.G5.dll
+860916efc9531c020c12a55bf90d9f3541d96489aed92daef9685c8045f9f911  .\stage\tools\TspBatch\bin\TspBatch.dll
+91d66d234a2911b4aaeb65722f5ec90795abd3dfbb9accaa0b461685c9c6b399  .\stage\tools\TspBatch\bin\TSP_CS.Core.G5.dll
+2333e12d64d30823e5a41ae602c4d06fcca00594425c0903723a602347b55384  .\stage\tools\TspBatch\bin\TspBatch.exe

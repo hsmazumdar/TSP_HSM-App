@@ -1,5 +1,11 @@
 # TSP Solver Application - Public Repository
 
+> **Version 2.1 / manuscript V9 (21 November 2026):** the compiled core used for the V9 grid results is in
+> `libs/g5/TSP_CS.Core.G5.dll`, with the headless runner `tools/TspBatch/` (prebuilt `bin/TspBatch.exe`).
+> Evidence for every V9 table is in `experiments/` (start at [`experiments/README_V9.md`](experiments/README_V9.md)).
+> V9 withdrew the earlier Table 1, Table 2/Figure 1, the 27-instance TSPLIB table and the small non-grid tables,
+> because their raw runs could not be re-verified; the files for them below are kept for the record only.
+>
 > **Version 2.0 (November 2026):** new core DLL with fixes and a local-search stage (2-opt + Or-opt + ILS),
 > random city order by default, and fast k-NN for large non-grid instances. See [`CHANGELOG.md`](CHANGELOG.md).
 > The August 2026 core is kept in `libs/legacy/` (tag `v1-aug2026`).

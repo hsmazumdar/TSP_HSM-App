@@ -1,5 +1,15 @@
 # Changelog
 
+## v2.1 – 21 November 2026 (`libs/g5/TSP_CS.Core.G5.dll`, `tools/TspBatch/`)
+
+Compiled core of engine G5, which produced the grid results of manuscript V9 (Tables 1–5 and 9):
+the January-2026 engine with the five corrections listed in `experiments/extreme_25m/CHANGES_FIXES.md`, plus
+a dead-end jump to the nearest unvisited city, focused 2-opt repair of jump edges, a flat coordinate index
+instead of per-city dictionaries, K chosen by available memory, a grid-bucket k-NN for non-grid shapes, and an
+optional Fisher–Yates city shuffle (`--shuffle 1 --seed S`). `tools/TspBatch` is the headless runner with the
+built-in tour verifier; `tools/TspBatch/selftest.log` is the release check (10k and 1M shuffled grids, both optimal).
+The v2.0 library (`libs/TSP_CS.Core.dll`) is unchanged and is the one used for the irregular-instance tables.
+
 ## v2.0 – November 2026 (`libs/TSP_CS.Core.dll`)
 
 The previous core (August 2026, used for the earlier manuscript tables) is kept unchanged as
